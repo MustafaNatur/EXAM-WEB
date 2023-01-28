@@ -121,6 +121,10 @@ a:hover {
     margin-right: auto;
 }
 
+.margin2 {
+    margin-top: 5px;
+}
+
 .part2 {
     text-align: center;
 }
@@ -136,3 +140,4 @@ a:hover {
 .margin {
     margin-top: 20px;
 }
+

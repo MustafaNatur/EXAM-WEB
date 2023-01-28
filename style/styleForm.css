@@ -1,0 +1,99 @@
+:root {
+    /*Colors*/
+    --main-bg-color-1: #FFFFFF;
+    --main-text-color: #000000;
+    --main-under-color: #E8532E;
+    --max-width: 1400px;
+  
+    /*Fonts*/
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    width: 40%;
+    min-width: 32em;
+    
+}
+.div_section_zadaha_2{
+    display: flex;
+    justify-content: center;
+}
+
+.zadaha_2{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.div_radiobox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.input{
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.input {
+    border: 1px solid #000000;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #000000;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;   
+}
+
+.input:focus {
+    border-color: var(--main-under-color);
+    outline: none;
+}
+
+.flexCheck {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

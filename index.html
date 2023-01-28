@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/styleForm.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,11 +26,11 @@
       </div>
       <nav>
         <ul class="navBar">
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="basic-1"><a href="#">Mission</a></li>
+          <li class="basic-1"><a href="#">Team</a></li>
+          <li class="basic-1"><a href="#">Products</a></li>
+          <li class="basic-1"><a href="#">Careers</a></li>
+          <li class="basic-1"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -45,9 +46,11 @@
           <p class="typeP2">The world as we know it is old and boring</p>
         </div>
         <div class="main1">
-          <img src="images/img1.png" alt="" class="right"/>
+          <img src="images/img1.png" alt="" class="right" />
           <div class="part2">
-            <p class="typeP1">Blockchain and decentralization changes everything</p>
+            <p class="typeP1">
+              Blockchain and decentralization changes everything
+            </p>
             <p class="typeP1 margin">
               We believe that technology and communities are a force that can
               change our lives. Games for us are a way to build life
@@ -58,18 +61,78 @@
         </div>
 
         <div class="main1">
-           
-            <div class="part2">
-              <p class="typeP1">This is an opportunity to change this world and build other worlds - according to your rules. This is a breath of fresh air outside the power of states, outside politics</p>
-              <p class="typeP1 margin">
-                We want to create games that continue to be created and developed together with the gaming community.
-              </p>
-            </div>
-            <img src="images/img2.png" alt="" class="left"/>
+          <div class="part2">
+            <p class="typeP1">
+              This is an opportunity to change this world and build other worlds
+              - according to your rules. This is a breath of fresh air outside
+              the power of states, outside politics
+            </p>
+            <p class="typeP1 margin">
+              We want to create games that continue to be created and developed
+              together with the gaming community.
+            </p>
           </div>
+          <img src="images/img2.png" alt="" class="left" />
+        </div>
       </section>
       <section>
         <h2 class="sr-only">Задание 2</h2>
+
+        <fieldset>
+          <legend class="typeP1">Search</legend>
+          <form
+            name="contact"
+            method="POST"
+            action="//httpbin.org/post"
+            data-netlify="true"
+          >
+            <p class="margin typeP1">Name:</p>
+            <label for=""
+              ><input
+                name="Name"
+                placeholder="Name"
+                type="text"
+                class="input margin2"
+                required
+            /></label>
+            <div class="flexColumn margin">
+              <span class="input-title typeP1">Search type: </span>
+
+              <div class="flexCheck margin2">
+                <label for="Text">Text</label>
+                <input
+                  type="checkbox"
+                  id="Text"
+                  name="Search type"
+                  value="Text"
+                />
+              </div>
+
+              <div class="flexCheck margin2">
+                <label for="Image">Image</label>
+                <input
+                  type="checkbox"
+                  id="Image"
+                  name="Search type"
+                  value="Image"
+                />
+              </div>
+
+              <div class="flexCheck margin2">
+                <label for="Video">Video</label>
+                <input
+                  type="checkbox"
+                  id="Video"
+                  name="Search type"
+                  value="Video"
+                />
+              </div>
+            </div>
+          </form>
+        </fieldset>
+        <button class="button wrapper" type="submit">
+            Send<img src="/images/Send.svg" class="abs" width="25px">
+        </button>
       </section>
     </main>
   </body>
