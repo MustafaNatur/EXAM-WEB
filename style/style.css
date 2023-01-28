@@ -1,11 +1,8 @@
 :root {
     /*Colors*/
-    --main-bg-color-1: #2d2d2d;
-    --main-bg-color-2: #575555;
-    --buttons-bg-color: #00d5e4;
-    --main-text-color: #ffffff;
-    --header-bg-color: #2d2d2d;
-    --rare-text-color: #00d5e4;
+    --main-bg-color-1: #FFFFFF;
+    --main-text-color: #000000;
+    --main-under-color: #E8532E;
     --max-width: 1400px;
   
     /*Fonts*/
@@ -35,3 +32,58 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+
+* {
+    background-color: var(--main-bg-color-1);
+}
+
+li,
+a,
+button {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+header {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    max-width: 183px;
+}
+
+.headerP {
+    padding-left: 9px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.navBar {
+    list-style: none;
+}
+
+.navBar li {
+   display: inline-block;
+   padding-left: 20px;
+   font-size: 1.8rem;
+   font-weight: 400;
+   line-height: 22px;
+
+}
+
+.navBar li {
+   transition: all 0.3s ease 0s;
+}
+
+li:hover {
+    color: var(--main-under-color);
+}
