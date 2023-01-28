@@ -78,14 +78,15 @@
       <section>
         <h2 class="sr-only">Задание 2</h2>
 
-        <fieldset>
-          <legend class="typeP1">Search</legend>
-          <form
+        <form>
+          
+          <fieldset
             name="contact"
             method="POST"
             action="//httpbin.org/post"
             data-netlify="true"
           >
+          <legend class="typeP1">Search</legend>
             <p class="margin typeP1">Name:</p>
             <label for=""
               ><input
@@ -128,11 +129,12 @@
                 />
               </div>
             </div>
-          </form>
-        </fieldset>
-        <button class="button wrapper" type="submit">
+          </fieldset>
+          <button class="button wrapper" type="submit">
             Send<img src="/images/Send.svg" class="abs" width="25px">
         </button>
+      </form>
+
       </section>
     </main>
   </body>
