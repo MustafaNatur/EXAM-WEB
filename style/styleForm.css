@@ -81,7 +81,9 @@ fieldset {
 
 .flexCheck {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .button {
@@ -90,6 +92,14 @@ fieldset {
     margin-right: auto;
     margin-bottom: 50px;
 
+}
+
+* {
+    transition: all 0.3s ease 0s;
+ }
+
+.button:hover {
+    background-color: var(--main-under-color);
 }
 
 .wrapper {
