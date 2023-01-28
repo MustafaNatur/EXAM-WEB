@@ -1,0 +1,36 @@
+:root {
+    /*Colors*/
+    --main-bg-color-1: #2d2d2d;
+    --main-bg-color-2: #575555;
+    --buttons-bg-color: #00d5e4;
+    --main-text-color: #ffffff;
+    --header-bg-color: #2d2d2d;
+    --rare-text-color: #00d5e4;
+    --max-width: 1400px;
+  
+    /*Fonts*/
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
